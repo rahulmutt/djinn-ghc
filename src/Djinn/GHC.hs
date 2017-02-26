@@ -10,12 +10,12 @@ import Data.Set (Set, insert, union, unions, empty, toList)
 import qualified Djinn.HTypes as D
 import qualified Djinn.LJT as D
 
-import MonadUtils
-import qualified DataCon as G
-import qualified GHC as G
-import qualified Name as G
-import qualified TyCon as G
-import qualified Type as G
+import ETA.Utils.MonadUtils
+import qualified ETA.BasicTypes.DataCon as G
+import qualified ETA.Main.GHC as G
+import qualified ETA.BasicTypes.Name as G
+import qualified ETA.Types.TyCon as G
+import qualified ETA.Types.Type as G
 
 data NoExtraInfo = NoExtraInfo
 type HEnvironment1 a = [(D.HSymbol, ([D.HSymbol], D.HType, a))]
